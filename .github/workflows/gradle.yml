@@ -24,3 +24,7 @@ jobs:
       with: 
         name: BaiMusic-Sponge
         path: build/libs
+    - name: 配置
+      run: |
+        lscpu
+        free -m
