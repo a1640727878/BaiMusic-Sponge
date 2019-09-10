@@ -17,10 +17,8 @@ jobs:
         java-version: 1.8
     - name: 构建
       run: |
-        git submodule update --init --recursive
         chmod +x ./gradlew
         ./gradlew build
-        ls
     - name: 发布
       uses: actions/upload-artifact@master
       with: 
